@@ -3,54 +3,59 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css"
-        integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg=="
-        crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css"
+    integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg=="
+    crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
-    <h1>Project coming soon!</h1>
+  <div class="grid-container">
+    <div class="grid-y grid-margin-y">
+      
+      <h1>Project coming soon!</h1>
 
-   <h2>SearchBar</h2>
-   <br>
-   <form data-abide novalidate>
-    <div class="grid-x grid-margin-x">
-      <div class="cell">
-        <div data-abide-error class="alert callout" style="display: none;">
-          <p><i class="fi-alert"></i> There are some errors in your form.</p>
+      <h2>SearchBar</h2>
+      <br>
+      <form data-abide novalidate>
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-12">
+            <label>
+              <input id="user-input" type="text" placeholder="Your movie or show"
+                aria-describedby="exampleHelpTextNumber" required pattern="number">
+              <span class="form-error">
+                Yo, you had better fill this out, it's required.
+              </span>
+            </label>
+            <p class="help-text" id="exampleHelpTextNumber">Here's how you use this input field!</p>
+          </div>
+
+        
+
+        </div>
+        <div class="grid-x grid-margin-x">
+          <fieldset class="cell medium-6">
+            <button id="search-button" class="button" type="submit" value="Submit">Search</button>
+          </fieldset>
+          <fieldset class="cell medium-6">
+            <button class="button" type="reset" value="Reset">Reset</button>
+          </fieldset>
+        </div>
+      </form>
+
     </div>
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12">
-        <label>
-          <input id="user-input" type="text" placeholder="Your movie or show" aria-describedby="exampleHelpTextNumber" required pattern="number">
-          <span class="form-error">
-            Yo, you had better fill this out, it's required.
-          </span>
-        </label>
-        <p class="help-text" id="exampleHelpTextNumber">Here's how you use this input field!</p>
-      </div>
-
-      </div>
-
-    </div>
-
-    </div>
-    <div class="grid-x grid-margin-x">
-      <fieldset class="cell medium-6">
-        <button id="search-button"class="button" type="submit" value="Submit">Search</button>
-      </fieldset>
-      <fieldset class="cell medium-6">
-        <button class="button" type="reset" value="Reset">Reset</button>
-      </fieldset>
-    </div>
-  </form>
+  </div>
 
 
 
@@ -61,14 +66,13 @@
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
-        integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
-        crossorigin="anonymous"></script>
-    <script src="./assets/script/api.js"></script>
-    <script src="./assets/script/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
+    integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
+    crossorigin="anonymous"></script>
+  <script src="./assets/script/api.js"></script>
+  <script src="./assets/script/app.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,9 @@
     padding-top: 10px;
     border-top:10px;
 }
+.callout {
+    margin: 1rem 0 1rem 0;
+}
 
 #pond {
     justify-content: center;

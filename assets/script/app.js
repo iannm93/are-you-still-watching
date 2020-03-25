@@ -9,9 +9,9 @@
 // id's from above have siblings ending in -2 as a placeholder for what second return would look like.
 
 
-function searchShowMovie(input) {
-    // AJAX CALL GOES HERE (for visualization)
-}
+// function searchShowMovie(input) {
+//     // AJAX CALL GOES HERE (for visualization)
+// }
 $("#search-button").on("click", function (event) {
 
     // preventing button from trying to submit the form
@@ -23,34 +23,34 @@ $("#search-button").on("click", function (event) {
     // pass the search function the user input as an argument 
     searchShowMovie(userInput);
 
-    // empty the movie title div
-    $("#MOVIETITLE").empty();
+    // // empty the movie title div
+    // $("#MOVIETITLE").empty();
 
-    // append movie title to movie ID
+    // // append movie title to movie ID
     
-    $("#MOVIETITLE").append(movieName);
+    // $("#MOVIETITLE").append(movieName);
     
-    // empty the movie rating div
+    // // empty the movie rating div
 
-    $("#MOVIERATING").empty();
+    // $("#MOVIERATING").empty();
 
     
 
-    // append movie rating to rating ID
-    ("#MOVIERATING").append(rating);
+    // // append movie rating to rating ID
+    // ("#MOVIERATING").append(rating);
 
-    // empty the stream info div
-    $("#STREAMINFO").empty();
+    // // empty the stream info div
+    // $("#STREAMINFO").empty();
 
-    // append stream information to stream ID
-    $("#STREAMINFO").append(streaminfo);
+    // // append stream information to stream ID
+    // $("#STREAMINFO").append(streaminfo);
 
-    // emptyu the release year info div
-    $("#RELEASEYEAR").empty();
+    // // emptyu the release year info div
+    // $("#RELEASEYEAR").empty();
 
 
-    // append release year to realease iD
-    $("#RELEASEYEAR").append(release);
+    // // append release year to realease iD
+    // $("#RELEASEYEAR").append(release);
 
 });
 // this is the exact same function as the above, just for keydown (possibly refactor into one function)

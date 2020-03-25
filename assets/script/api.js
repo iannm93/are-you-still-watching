@@ -54,5 +54,17 @@ function movieInfo(input) {
     }).then(function(response) {
       console.log(response)
       $("#poster-image").html($("<img>").attr("src", response.Poster));
+      // Find the object property for the movie imdb rating
+      // create html element  
+      // display the property
+      $("#search-rating-1").html($("<p>").text("IMdB Rating: " + response.imdbRating));
+            // Find the object property for the movie release date
+      // create html element  
+      // display the property
+      $("#year-released-1").html($("<p>").text("Release Date: " + response.Released));   
+      // Find the object property for the movie plot
+      // create html element        
+      // display the property
+      $("#search-title-1").html($("<p>").text("Title: " + response.Title));
     });
   }

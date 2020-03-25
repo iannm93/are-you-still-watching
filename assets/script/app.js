@@ -21,7 +21,8 @@ $("#search-button").on("click", function (event) {
     console.log(userInput);
 
     // pass the search function the user input as an argument 
-    searchShowMovie(userInput);
+    //streamingLocation(userInput);
+    movieInfo(userInput);
 
     // // empty the movie title div
     // $("#MOVIETITLE").empty();

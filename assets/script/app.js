@@ -1,3 +1,14 @@
+// #poster-image , was created on img tag on line 64
+// #small-container , was created for section to loop result cards
+// #search-title-1 , was created to store title
+// #year-released-1 , was created to store release date
+// #available-on-1 , was created to store available platforms
+// #search-rating-1 , was created to store rating
+
+
+// id's from above have siblings ending in -2 as a placeholder for what second return would look like.
+
+
 function searchShowMovie(input) {
     // AJAX CALL GOES HERE (for visualization)
 }

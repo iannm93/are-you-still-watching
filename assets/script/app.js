@@ -1,12 +1,13 @@
 function searchShowMovie(input) {
     // AJAX CALL GOES HERE (for visualization)
 }
-$("#IDGOESHERE").on("click", function (event) {
+$("#search-button").on("click", function (event) {
 
     // preventing button from trying to submit the form
     event.preventDefault();
     // store the keydown/ onclick value as a variable
-    var userInput = $("#IDGOESHERE").val().trim();
+    var userInput = $("#user-input").val().trim();
+    console.log(userInput);
 
     // pass the search function the user input as an argument 
     searchShowMovie(userInput);

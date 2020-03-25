@@ -53,6 +53,6 @@ function movieInfo(input) {
       method: "GET"
     }).then(function(response) {
       console.log(response)
-      $("#poster-image").append($("<img>").attr("src", response.Poster));
+      $("#poster-image").html($("<img>").attr("src", response.Poster));
     });
   }

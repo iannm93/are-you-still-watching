@@ -3,3 +3,15 @@
     background-color: brown;
     color: whitesmoke;
 }
+
+#small-container {
+    background-color: thistle;
+    color: midnightblue;
+    padding-top: 10px;
+    border-top:10px;
+}
+
+#pond {
+    justify-content: center;
+    align-items: center;
+}

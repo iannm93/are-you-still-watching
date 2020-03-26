@@ -4,9 +4,11 @@
 
 $("#search-button").on("click", function (event) {
 
-    // preventing button from trying to submit the form
+    // preventing button from trying to submit the forbm
     event.preventDefault();
-    // $("#poster-display").show();
+    // $("#poster-display").attr("style", "display:block;")
+    $("#poster-image").attr("style","display:block;")
+   $("#information-display").attr("style","display:block;")
     // $("#information-display").show();
     // store the keydown/ onclick value as a variable
     var userInput = $("#user-input").val().trim();

@@ -15,8 +15,8 @@ $("#search-button").on("click", function (event) {
     console.log(userInput);
 
     // pass the search function the user input as an argument 
-    //streamingLocation(userInput);
-    movieInfo(userInput);
+    streamingLocation(userInput);
+    // movieInfo(userInput);
 
 
 });

@@ -6,9 +6,12 @@ $("#search-button").on("click", function (event) {
 
     // preventing button from trying to submit the forbm
     event.preventDefault();
+    $("#information-display").empty();
+    $("#poster-image").empty();
     // $("#poster-display").attr("style", "display:block;")
-    $("#poster-image").attr("style","display:block;")
-   $("#information-display").attr("style","display:block;")
+    $("#poster-image").attr("style","display:block;");
+   $("#information-display").attr("style","display:block;");
+   $(".poster-button").attr("id", "poster-image").attr("class", "poster-button").attr("type","button").attr("data-toggle", "example-dropdown-bottom-center");
     // $("#information-display").show();
     // store the keydown/ onclick value as a variable
     var userInput = $("#user-input").val().trim();

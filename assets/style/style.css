@@ -1,7 +1,13 @@
+body {
+    background-color: #230444;
+    margin: 2rem 1rem;
+}
+
 #large-container {
     text-align: center;
-    background-color: brown;
+    background-color: #2c6394;
     color: whitesmoke;
+    padding: 2rem 1rem;
 }
 
 #small-container {
@@ -22,6 +28,13 @@
 #form-container {
     padding-top: 2rem;
     background-color:blue;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+#search-button, #reset-button {
+    margin: .25rem .5rem .75rem .5rem;
 }
 /* img {
     max-width: 50%;

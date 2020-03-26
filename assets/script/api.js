@@ -36,7 +36,7 @@ function streamingLocation(input) {
                 //create variable to store info from JSON object to append property values to DOM
                 var streamInfo = $("<p>").text("Available on: " + streamingService);
                 //append properties to DOM
-                $("#available-on-1").append(streamInfo);
+                $("#information-display").append(streamInfo);
             };
         };
         
@@ -54,18 +54,18 @@ function movieInfo(input) {
       method: "GET"
     }).then(function(response) {
       console.log(response)
-      $("#poster-image").append($("<img>").attr("src", response.Poster));
+      $("#poster-image").append($("<img>").attr("src", response.Poster).addClass(".poster-button"));
       // Find the object property for the movie imdb rating
       // create html element  
       // display the property
-      $("#search-rating-1").append($("<p>").text("IMdB Rating: " + response.imdbRating));
+      $("#information-display").append($("<h4>").text("IMdB Rating: " + response.imdbRating));
             // Find the object property for the movie release date
       // create html element  
       // display the property
-      $("#year-released-1").append($("<p>").text("Release Date: " + response.Released));   
+      $("#information-display").append($("<h4>").text("Release Date: " + response.Released));   
       // Find the object property for the movie plot
       // create html element        
       // display the property
-      $("#search-title-1").append($("<p>").text("Title: " + response.Title));
+      $("#information-display").append($("<h2>").text("Title: " + response.Title));
     });
   }

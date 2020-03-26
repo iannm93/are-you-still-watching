@@ -34,7 +34,7 @@ function streamingLocation(input) {
                 var streamingService = movie.locations[j].display_name;
                 console.log(streamingService);
                 //create variable to store info from JSON object to append property values to DOM
-                var streamInfo = $("<p>").text("Available on: " + streamingService);
+                var streamInfo = $("<h4>").text("Available on: " + streamingService);
                 //append properties to DOM
                 $("#information-display").append(streamInfo);
             };

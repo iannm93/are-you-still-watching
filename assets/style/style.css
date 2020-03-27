@@ -25,6 +25,11 @@ body {
     align-items: center;
 }
 
+#pond-2 {
+    justify-content: center;
+    align-items: center;
+}
+
 #form-container {
     padding-top: 2rem;
     background-color:blue;

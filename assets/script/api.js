@@ -54,11 +54,29 @@ function movieInfo(input) {
       method: "GET"
     }).then(function(response) {
       console.log(response)
+<<<<<<< HEAD
+      $("#info-grid").append($("<div>").addClass("grid-x grid-margin-x").attr("id", "pond-2"));
+      $("#pond-2").append($("<div>").addClass("cell medium-4").attr("id", "test-2"));
+      $("#test-2").append($("<button>").attr("id","poster-image-1").attr("type", "button").attr("data-toggle","dropdown-1").attr("style", "display: block;"));
+      $("#test-2").append($("<div>").addClass("dropdown-pane").attr("data-position", "bottom").attr("data-alignment", "center").attr("id", "dropdown-1").attr("data-auto-focus", "true"));
+      $("#poster-image-1").append($("<img>").attr("src", response.Poster));
+
+      $("#poster-image").append($("<img>").attr("src", response.Poster).addClass(".poster-button"));
+
+      $("#pond-2").append($("<div>").addClass("cell medium-4").attr("id", "test-3"));
+      $("#test-3").append($("<div>").attr("id", "information-display-1").addClass("callout").attr("style", "display:block;"));
+      $("#information-display-1").append($("<h2>").attr("id", "search-title-2").text("Title: " + response.Title));
+      $("#information-display-1").append($("<h3>").attr("id", "available-on-2").text("Streaming service display"));
+      $("#information-display-1").append($("<h4>").attr("id", "year-released-2").text("Release Date: " + response.Released));
+      $("#information-display-1").append($("<h4>").attr("id", "search-rating-2").text("IMdB Rating: " + response.imdbRating));
+      
+=======
       $("#info-grid").append($("<div>").addClass("grid-x grid-margin-x").attr("id", "grid-x-cont").text("hello world"));
       $("#grid-x-cont").append($("<div>").addClass("cell medium-4").attr("id", "perfect-cell").text("I AM PERFECT CELL"));
       $("#perfect-cell").append($("<div>").addClass("dropdown-pane").attr("data-position", "bottom").attr("data-alignment", "center").attr("id", "dropdown-1").attr("data-auto-focus", "true").attr("data-dropdown"));
       $("#perfect-cell").append($("<img>").attr("src", response.Poster).addClass(".poster-button").attr("id", "dropdown-1"));
       $("#poster-image").append($("<img>").attr("src", response.Poster).addClass(".poster-button"));
+>>>>>>> fca62c1445a08c9feffc8e596d7fcc443e7698d6
           
       // Find the object property for the movie imdb rating
       // create html element  

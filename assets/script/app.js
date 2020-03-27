@@ -10,16 +10,18 @@ $("#search-button").on("click", function (event) {
     $("#poster-image").empty();
     // $("#poster-display").attr("style", "display:block;")
     $("#poster-image").attr("style","display:block;");
+    // $("#perfect-cell").attr("style","display:block;");
    $("#information-display").attr("style","display:block;");
    $(".poster-button").attr("id", "poster-image").attr("class", "poster-button").attr("type","button").attr("data-toggle", "example-dropdown-bottom-center");
+   $("#perfect-cell").attr("id", "poster-image").attr("class", "poster-button").attr("type","button").attr("data-toggle", "dropdown-1");
     // $("#information-display").show();
     // store the keydown/ onclick value as a variable
     var userInput = $("#user-input").val().trim();
     console.log(userInput);
 
     // pass the search function the user input as an argument 
-    streamingLocation(userInput);
-    // movieInfo(userInput);
+    // streamingLocation(userInput);
+    movieInfo(userInput);
 
 
 });

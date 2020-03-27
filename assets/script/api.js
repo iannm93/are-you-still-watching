@@ -83,6 +83,11 @@ function movieInfo(input) {
       // create html element        
       // display the property
       $("#information-display").append($("<h2>").text("Title: " + response.Title));
+      $("#poster-image").on("click",function(){
+        console.log(response.Plot)
+        $(".dropdown-pane").text(response.Plot)
+      //   $("#here").html($("<p>").text(response.Plot));
+    }) 
     });
   }
 

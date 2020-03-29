@@ -50,3 +50,7 @@ body {
     height: 40px;
     width: 40px;
 }
+#test-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

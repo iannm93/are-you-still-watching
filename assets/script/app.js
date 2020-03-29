@@ -3,15 +3,17 @@ $("#search-button").on("click", function (event) {
     event.preventDefault();
     $("#information-display").empty();
     $("#poster-image").empty();
+    $("#trailers").empty();
     // $("#poster-display").attr("style", "display:block;")
-    $("#poster-image").attr("style","display:block;");
+    $("#poster-image").attr("style","display:inline-block;");
     // $("#perfect-cell").attr("style","display:block;");
-   $("#information-display").attr("style","display:block;");
+   $("#information-display").attr("style","display:inline-block;");
     // store the keydown/ onclick value as a variable
     var userInput = $("#user-input").val().trim();
     console.log(userInput);
     // pass the search function the user input as an argument 
     streamingLocation(userInput);
+
     function youtubeAPI(input){
       $.ajax({
         method: "GET",

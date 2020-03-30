@@ -14,99 +14,87 @@
 </head>
 
 <body>
-  <div class="grid-container-fluid">
-    <header>
+  <header class="grid-container-fluid">
+
       <div class="callout" id="universe-background">
         <h1 id="header-text">Are You Still Watching?</h1>
       </div>
-    </header>
-</div>
 
-  <div class="grid-container" id="large-container">
+  </header>
+
+  <main class="grid-container" id="large-container">
     <div class="grid-y grid-margin-y">
       <div class="cell small-12" id="whole-page" data-alignment="center">
-      
-     
+        
+        <br>
 
-      
-     
+        <!-- Form Container -->
+        <div class="grid-container" id="form-container">
+          <div class="grid-y grid-margin-y">
+          
+            <form  data-abide novalidate>
 
-      <!-- <h2>Search below and find out!</h2> -->
-      <br>
+              <div class="grid-x grid-margin-x">
+                <div class="cell small-12">
 
-      <div class="grid-container" id="form-container">
-        <div class="grid-y grid-margin-y">
-          <form  data-abide novalidate>
-            <div class="grid-x grid-margin-x">
-              <div class="cell">
-                <div data-abide-error class="alert callout" style="display: none;">
-                  <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                  <label>
+                    <input id="user-input" type="text" placeholder="Your movie or show"
+                      aria-describedby="exampleHelpTextNumber" required pattern="alpha_numeric">
+                    <span class="form-error">
+                      Your input has a space inbetween words.
+                    </span>
+                  </label>
+
                 </div>
               </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell small-12">
-                <label>
-                  <input id="user-input" type="text" placeholder="Your movie or show"
-                    aria-describedby="exampleHelpTextNumber" required pattern="alpha_numeric">
-                  <span class="form-error">
-                    Yo, you had better fill this out, it's required.
-                  </span>
-                </label>
-                <p class="help-text" id="exampleHelpTextNumber">Here's how you use this input field!</p>
-              </div>
 
-            
+              <div class="grid-x grid-margin-x">
+                <fieldset class="cell medium-6">
 
-            </div>
-            <div class="grid-x grid-margin-x">
-              <fieldset class="cell medium-6">
                 <button id="search-button" class="button" type="submit" value="Submit">Search</button>
-              </fieldset>
-              <fieldset class="cell medium-6">
+                </fieldset>
+                <fieldset class="cell medium-6">
                 <button id="reset-button" class="button" type="reset" value="Reset">Reset</button>
-              </fieldset>
-            </div>
-          </form>
-        </div>
-      </div>
+                </fieldset>
 
-      <div class="grid-container-fluid" id="small-container" style="display: none;">
-        <div id="info-grid" class="grid-y grid-margin-y">
-          <!-- <h1>Test of internal grid</h1> -->
-          <div class="grid-x grid-margin-x" id="pond" data-equalizer data-equalize-on="medium" id="test-eq">
-            
-            <div id="test-1" class="cell medium-4">
-            <!-- <div id = "poster-dispay" class="callout" data-equalizer-watch > -->
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Returned Information Grid  -->
+        <div class="grid-container-fluid" id="small-container" style="display: none;">
+          <div id="info-grid" class="grid-y grid-margin-y">
+ 
+            <!-- Poster and Information Grid -->
+            <div class="grid-x grid-margin-x" id="pond-1" data-equalizer data-equalize-on="medium" id="test-eq">
+              <div id="test-1" class="cell medium-4">
+
                 <button  id="poster-image" class="poster-button" type="button" data-toggle="example-dropdown-bottom-center" style="display: none;"></button>
-                <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center" data-dropdown data-auto-focus="true">
-                  <h1>Does this work</h1>
-                </div>  
-              <!-- </div> -->
-            </div>
-            <div class="cell medium-4">
-              <div id = "information-display" class="callout" data-equalizer-watch style= "display:none;">
-                <h2 id="search-title-1">Title of Content</h2>
-                <h3 id="available-on-1">Available Platforms</h3>
-                <h4 id="year-released-1">Year Released</h4>
-                <h4 id="search-rating-1">Rating Goes here</h4>
-              </div>
-            </div>
-          </div>
+                <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center" data-dropdown data-auto-focus="true"></div>  
 
-            <div class="grid-x grid-margin-x" id="pond" data-equalizer data-equalize-on="medium" id="test-eq">
-              <div class= "cell medium-12" id = "trailers">
-                
               </div>
-                
+
+              <div class="cell medium-4">
+
+                <div id = "information-display" class="callout" data-equalizer-watch style= "display:none;"></div>
+
+              </div>
+            </div>
+
+            <!-- Grid container for Trailers -->
+            <div class="grid-x grid-margin-x" id="pond-2" data-equalizer data-equalize-on="medium" id="test-eq">
+
+              <div class= "cell medium-12" id = "trailers"> </div>   
+
             </div>
             
           </div>
-          
         </div>
+        
       </div>
     </div>
-  </div>  
+  </main>  
 
 
 

@@ -1,20 +1,20 @@
 $("#search-button").on("click", function (event) {
-    // preventing button from trying to submit the forbm
+    // preventing default behavior
     event.preventDefault();
+    // empty all the elements each time the user searches
     $("#information-display").empty();
     $("#poster-image").empty();
     $("#trailers").empty();
-    // $("#poster-display").attr("style", "display:block;")
     $("#poster-image").attr("style","display:inline-block;");
-    // $("#perfect-cell").attr("style","display:block;");
+    // gives the information display/small-container divs an inline block
    $("#information-display").attr("style","display:inline-block;");
-    // store the keydown/ onclick value as a variable
+   
     $("#small-container").attr("style","display:inline-block")
+    // store the user's search value as a variable
     var userInput = $("#user-input").val().trim();
-    console.log(userInput);
     // pass the search function the user input as an argument 
     streamingLocation(userInput);
-
+    // call the youtube API
     function youtubeAPI(input){
       $.ajax({
         method: "GET",
@@ -33,28 +33,16 @@ $("#search-button").on("click", function (event) {
           type: "video",
           videoEmbeddable: true,
         },
-        // success: function (data){
-        //   embedVideo(data)
-        // },
-        // error : function (response){
-        //   console.log("request failed")
-        // }
+     
       }).then(function(response){
         console.log(response)
-        // console.log(response.items[0].id.kind)
+      //  create a variable storing the watch ID of the requested video as a response
        var trailer="https://www.youtube.com/embed/" + (response.items[0].id.videoId)
-      console.log(trailer)
-        // console.log("https://www.youtube.com/watch?v=" +  trailer )
-        $("#trailers").append($("<iframe>").width(600).height(400).attr("src", trailer))
+      // concat the watch ID into the embed link
+        $("#trailers").append($("<iframe>").width(420).height(315).attr("src", trailer))
       })
     }
-      // pass the search function the user input as an argument 
-      // streamingLocation(userInput);
-      // movieInfo(userInput);
       youtubeAPI(userInput)
-      // randomFunction();
-      // $.when(streamingLocation(userInput)).then(function(){
-      //     movieInfo(userInput);
-      //   })
-      // <iframe width="956" height="538" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+     
 });

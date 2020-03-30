@@ -4,6 +4,11 @@ body {
     /* margin: 2rem 1rem; */
 }
 
+#whole-page {
+    justify-content: center;
+    align-items: center;
+}
+
 #large-container {
     text-align: center;
     background: transparent;
@@ -12,20 +17,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#universe-background {
+    text-align: center;
+    background-image: url("https://i.imgur.com/bl8RJdP.jpg");
+}
+
 #header-text {
     font-family: cursive;
     color: firebrick;
 }
 
-#whole-page {
-    justify-content: center;
-    align-items: center;
-}
-
-#universe-background {
-    
-    text-align: center;
-    background-image: url("https://i.imgur.com/bl8RJdP.jpg");
+#header-image{
+    margin-top: 0;
 }
 
 #small-container {
@@ -35,19 +39,6 @@ body {
     padding-top: 1rem;
     border-top:1rem;
     width: 70%;
-    justify-content: center;
-    align-items: center;
-}
-.callout {
-    margin: 1rem 0 1rem 0;
-}
-
-#pond {
-    justify-content: center;
-    align-items: center;
-}
-
-#pond-2 {
     justify-content: center;
     align-items: center;
 }
@@ -62,17 +53,27 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #user-input {
     height: 5rem;
     font-size: 2em;
-    font-family: cursive;
-    
+    font-family: cursive;    
 }
 
 #search-button, #reset-button {
     background-color:slategray;
     margin: .25rem .5rem .75rem .5rem;
 }
+
+.callout {
+    margin: 1rem 0 1rem 0;
+}
+
+#pond-1, #pond-2{
+    justify-content: center;
+    align-items: center;
+}
+
 #poster-image {
     padding-top: 1rem;
 }
@@ -81,6 +82,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 #trailers{
     justify-content: center;
     align-items: left;
@@ -92,12 +94,4 @@ body {
     background: transparent;
     color: white;
     font-family: cursive;
-}
-
-/* @media screen and (min-width: 480px) {
-    #trailers {width: 300px; height: 200px}
-} */
-
-#header-image{
-    margin-top: 0;
 }

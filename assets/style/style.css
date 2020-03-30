@@ -1,20 +1,22 @@
 body {
-    background-color: #230444;
+    background-image: url("https://viola.bz/wp-content/uploads/2011/11/Collage-of-movie-posters-by-American-artist-Drew-Struzan.jpg");
+    
     margin: 2rem 1rem;
 }
 
 #large-container {
     text-align: center;
-    background-color: #2c6394;
+    background: transparent;
     color: whitesmoke;
     padding: 2rem 1rem;
 }
 
 #small-container {
-    background-color: thistle;
+    
     color: midnightblue;
-    padding-top: 10px;
-    border-top:10px;
+    background-image: url("https://rmarcus.info/blog/assets/perlin/title.png");
+    padding-top: 1rem;
+    border-top:1rem;
 }
 .callout {
     margin: 1rem 0 1rem 0;
@@ -41,16 +43,21 @@ body {
 #search-button, #reset-button {
     margin: .25rem .5rem .75rem .5rem;
 }
-/* img {
-    max-width: 50%;
-    max-width: 50%;
-}  */
-
-.itunes-logo{
-    height: 40px;
-    width: 40px;
+#poster-image {
+    padding-top: 1rem;
 }
+
 #test-1{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+#trailers{
+    justify-content: center;
+    align-items: left;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+/* @media screen and (min-width: 480px) {
+    #trailers {width: 300px; height: 200px}
+} */

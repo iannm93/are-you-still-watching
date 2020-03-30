@@ -31,7 +31,7 @@ function streamingLocation(input) {
       var streamingService = movie.locations[i].display_name;
       console.log(streamingService);
       //create variable to store info from JSON object to append property values to DOM
-      var streamInfo = $("<p>").text(streamingService);
+      var streamInfo = $("<h5>").text(streamingService);
       //append properties to DOM
       $("#information-display").append(streamInfo);
 
@@ -80,15 +80,15 @@ function movieInfo(input) {
     // Find the object property for the movie imdb rating
     // create html element  
     // display the property
-    $("#information-display").append($("<h6>").text("IMdB Rating: " + response.imdbRating));
+    $("#information-display").append($("<h5>").text("IMdB Rating: " + response.imdbRating));
     // Find the object property for the movie release date
     // create html element  
     // display the property
-    $("#information-display").append($("<h6>").text("Release Date: " + response.Released));
+    $("#information-display").append($("<h5>").text("Release Date: " + response.Released));
     // Find the object property for the movie plot
     // create html element        
     // display the property
-    $("#information-display").prepend($("<h4>").text("Title: " + response.Title));
+    $("#information-display").prepend($("<h3>").text("Title: " + response.Title));
     $("#poster-image").on("click", function () {
       console.log(response.Plot)
       $(".dropdown-pane").text(response.Plot)

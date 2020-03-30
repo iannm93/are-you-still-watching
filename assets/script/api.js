@@ -1,8 +1,23 @@
 //------Presentation Resources (if API fail)--------
-// var backupArray = results{
-
-
-
+// var backupUtellyResponse = { 
+//   "results":[
+//     0: {
+//     "locations":[
+//     0: {
+//     "display_name":"Netflix"
+//     }
+//     1: {
+//       "display_name":"Amazon Prime"
+//     }
+//     2: {
+//       "display_name":"Google Play"
+//     }
+//     3: {
+//       "display_name":"iTunes"
+//     }
+//     ]
+// }]
+// }
 
 //create function to run ajax request
 function streamingLocation(input) {
@@ -21,6 +36,7 @@ function streamingLocation(input) {
   $.ajax(settings).then(function (response) {
     //DOM tree properties stored in variable for semantic
     var movie = response.results[0];
+    //var movie = backupResponse.results[0];
     console.log(response);
     movieInfo(input);
     for (var i = 0; i < movie.locations.length; i++) {
@@ -50,8 +66,13 @@ function streamingLocation(input) {
   });
 };
 //create OMDB ajax request
+// var backupOmdbResponse = {
+//   "Poster":"This is a Poster image",
+//   "imdbRating":"9/10",
+//   "Released":"June 13, 1993",
+//   "Title":"This is the Movie you searched"
+// };
 function movieInfo(input) {
-  //var movie = $(this).attr("data-name");
   var queryURL = "https://www.omdbapi.com/?t=" + input + "&apikey=trilogy";
   // Creates AJAX call for the specific movie button being clicked
   $.ajax({

@@ -1,7 +1,7 @@
 body {
-    background-image: url("https://viola.bz/wp-content/uploads/2011/11/Collage-of-movie-posters-by-American-artist-Drew-Struzan.jpg");
+    background-image: url("https://nohoartsdistrict.com/images/2019-november/NoHoArts_SOFF2019_poster_collage_2.jpg");
     
-    margin: 2rem 1rem;
+    /* margin: 2rem 1rem; */
 }
 
 #large-container {
@@ -9,14 +9,34 @@ body {
     background: transparent;
     color: whitesmoke;
     padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#header-text {
+    font-family: cursive;
+    color: firebrick;
+}
+
+#whole-page {
+    justify-content: center;
+    align-items: center;
+}
+
+#universe-background {
+    
+    text-align: center;
+    background-image: url("https://i.imgur.com/bl8RJdP.jpg");
 }
 
 #small-container {
     
     color: midnightblue;
-    background-image: url("https://rmarcus.info/blog/assets/perlin/title.png");
+    background-color: black;
     padding-top: 1rem;
     border-top:1rem;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
 }
 .callout {
     margin: 1rem 0 1rem 0;
@@ -34,13 +54,23 @@ body {
 
 #form-container {
     padding-top: 2rem;
-    background-color:blue;
+    background-color: black;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
-    height: auto;
+    height: 15rem;
+    width: 43rem;
+    justify-content: center;
+    align-items: center;
+}
+#user-input {
+    height: 5rem;
+    font-size: 2em;
+    font-family: cursive;
+    
 }
 
 #search-button, #reset-button {
+    background-color:slategray;
     margin: .25rem .5rem .75rem .5rem;
 }
 #poster-image {
@@ -56,6 +86,12 @@ body {
     align-items: left;
     padding-bottom: 2rem;
     padding-top: 1rem;
+}
+
+#information-display {
+    background: transparent;
+    color: white;
+    font-family: cursive;
 }
 
 /* @media screen and (min-width: 480px) {

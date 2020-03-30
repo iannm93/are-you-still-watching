@@ -14,6 +14,10 @@ function streamingLocation(input) {
     }
   }
 
+  // Melvin's key: bd1d73db3cmshe29def704ad7f7cp14f31cjsnd1be6b807fca
+  // Kyle's key:  aba3c7bdc1msh5b9a40821dbd03fp181584jsn6ee503254af2
+  // Ian's key:  87fc932229msh3df7352942e4a45p11800ajsn3e40e31a573b
+
   //funtion() to run call for JSON objects (streaming service availability)
   $.ajax(settings).then(function (response) {
     console.log("streaming info ran");

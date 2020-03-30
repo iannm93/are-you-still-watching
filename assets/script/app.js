@@ -9,6 +9,7 @@ $("#search-button").on("click", function (event) {
     // $("#perfect-cell").attr("style","display:block;");
    $("#information-display").attr("style","display:inline-block;");
     // store the keydown/ onclick value as a variable
+    $("#small-container").attr("style","display:inline-block")
     var userInput = $("#user-input").val().trim();
     console.log(userInput);
     // pass the search function the user input as an argument 
@@ -38,7 +39,7 @@ $("#search-button").on("click", function (event) {
        var trailer="https://www.youtube.com/embed/" + (response.items[0].id.videoId)
       console.log(trailer)
         // console.log("https://www.youtube.com/watch?v=" +  trailer )
-        $("#trailers").append($("<iframe>").width(500).height(500).attr("src", trailer))
+        $("#trailers").append($("<iframe>").width(600).height(400).attr("src", trailer))
       })
     }
       // pass the search function the user input as an argument 

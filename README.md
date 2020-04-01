@@ -12,7 +12,7 @@
 This is a basic browser web-page that takes a user input from a search bar and uses that input to pull up streaming availability about a given show. The user will be returned with information regarding where the show can be streamed, how the show was received by critics, and  other pertinent information.
 
 ## Screenshots
-![program screenshot](insert-PNG-here)
+![program screenshot](are-you-still-watching.PNG)
 
 
 ## Setup

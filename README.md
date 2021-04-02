@@ -19,7 +19,38 @@ This is a basic browser web-page that takes a user input from a search bar and u
 This program runs in browser. There is no installation needed.
 
 ## Code Examples
-    ADD API CALL HERE.
+        function youtubeAPI(input){
+      $.ajax({
+        method: "GET",
+        url: "https://www.googleapis.com/youtube/v3/search",
+        data:{ 
+
+          // Kyle's key AIzaSyBEvfU24tFTCbHE2Ua8dpDQPJ-sVD0A9Ko
+          // Ian's key  AIzaSyB4F4I4IMaXS_dYV8OgCHKwex9j-rd5s3g
+          // Melvin's key AIzaSyCgRDv-PRHPvXAN9yMAZWaSICDhRRfOuHs
+          //              AIzaSyDa-yttRLO2DiuNCpPVRyROynAvdeDKALM
+
+          key: "AIzaSyBEvfU24tFTCbHE2Ua8dpDQPJ-sVD0A9Ko",
+          q: input + " trailer",
+          part: "snippet",
+          maxResults: 1,
+          type: "video",
+          videoEmbeddable: true,
+        },
+     
+      }).then(function(response){
+        console.log(response)
+      //  create a variable storing the watch ID of the requested video as a response
+       var trailer="https://www.youtube.com/embed/" + (response.items[0].id.videoId)
+      // concat the watch ID into the embed link
+        $("#trailers").append($("<iframe>").width(420).height(315).attr("src", trailer))
+      })
+    }
+      youtubeAPI(userInput)
+      
+     
+});
+
 ## Status
 Project is in progress. Feel free to email us  with any suggestions or to report any bugs: ianmharris93@gmail.com/MELVIN'S EMAIL/KANE'S EMAIL/KYLE'S EMAIL
 
